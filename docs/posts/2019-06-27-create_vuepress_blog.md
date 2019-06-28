@@ -209,4 +209,4 @@ module.exports = {
 
 아직 블로그의 전체적인 기능을 구현을 못했지만 기능을 하나씩 개발해가는 재미가 쏠쏠한 것 같다. 앞으로 내가 개발하면서 일어났던 기억에 남는 일들을 잘 정리해 하나씩 포스팅해나가겠다.
 
-마지막으로 github 레포 링크이다. 
+마지막으로 github 레포 링크이다. https://github.com/ocipap/My-vuepress-blog
