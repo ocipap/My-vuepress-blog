@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('./highlight.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  cursor: pointer;
+  color: #000;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #444;
+}
+
+ul {
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.table-of-contents ul {
+  margin-top: 1.618em;
+  margin-bottom: 1.618em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.table-of-contents ul::before {
+  content: "목차";
+  display: block;
+  padding: 7px 20px;
+  background: #e1e1e1;
+  color: #313130;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.table-of-contents li {
+  list-style: none;
+  padding: 5px 20px;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s;
+}
+
+.table-of-contents li:hover {
+  background-color: #ddd;
+}
+
+.table-of-contents li:last-child {
+  border-bottom: none;
+}
+
+.table-of-contents li a {
+  display: block;
+  text-decoration: none;
+}
+
+.post-content .content__default {
+  padding: 30px 0;
+}
+
+.post-content h1 {
+  font-size: 3.5rem;
+}
+
+.post-content h2 {
+  font-size: 2.7rem;
+  line-height: 44px;
+  margin: 4rem 0 2rem;
+}
+
+.post-content h3 {
+  font-size: 1.8rem;
+  line-height: 44px;
+  margin: 2rem 0 1rem;
+}
+
+.post-content .header-anchor{
+  display: none;
+}
+
+.post-content p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 2rem;
+  word-break: keep-all;
+}
+
+.post-content p code {
+  color: #000;
+  padding: .25rem .5rem;
+  margin: 0;
+  font-size: .85em;
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+}
+
+.post-content ul, .post-content ol {
+  padding-left: 30px;
+}
+
+.post-content li{
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 2rem;
+  word-break: keep-all;
+}
+
+.search-box input {
+  color: #000;
+}
+
+
+
+

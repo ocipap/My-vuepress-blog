@@ -1,0 +1,190 @@
+
+
+div[class*=language-]:before {
+  position: absolute;
+  z-index: 3;
+  top: .8em;
+  right: 1em;
+  font-size: .75rem;
+  color: hsla(0,0%,100%,.4)
+}
+
+div[class~=language-js]:before {
+  content: "js"
+}
+
+div[class~=language-ts]:before {
+  content: "ts"
+}
+
+div[class~=language-html]:before {
+  content: "html"
+}
+
+div[class~=language-md]:before {
+  content: "md"
+}
+
+div[class~=language-vue]:before {
+  content: "vue"
+}
+
+div[class~=language-css]:before {
+  content: "css"
+}
+
+div[class~=language-sass]:before {
+  content: "sass"
+}
+
+div[class~=language-scss]:before {
+  content: "scss"
+}
+
+div[class~=language-less]:before {
+  content: "less"
+}
+
+div[class~=language-stylus]:before {
+  content: "stylus"
+}
+
+div[class~=language-go]:before {
+  content: "go"
+}
+
+div[class~=language-java]:before {
+  content: "java"
+}
+
+div[class~=language-c]:before {
+  content: "c"
+}
+
+div[class~=language-sh]:before {
+  content: "sh"
+}
+
+div[class~=language-yaml]:before {
+  content: "yaml"
+}
+
+div[class~=language-py]:before {
+  content: "py"
+}
+
+div[class~=language-javascript]:before {
+  content: "js"
+}
+
+div[class~=language-typescript]:before {
+  content: "ts"
+}
+
+div[class~=language-markup]:before {
+  content: "html"
+}
+
+div[class~=language-markdown]:before {
+  content: "md"
+}
+
+div[class~=language-json]:before {
+  content: "json"
+}
+
+div[class~=language-ruby]:before {
+  content: "rb"
+}
+
+div[class~=language-python]:before {
+  content: "py"
+}
+
+div[class~=language-bash]:before {
+  content: "sh"
+}
+
+
+.post-content div[class*=language-] {
+  line-height: 1.6em;
+  font-size: 14px;
+  background-color: #191f26;
+  color: #e6e1cf;
+  font-family: Consolas,Monaco,monospace;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+.post-content div[class*=language-].line-numbers-mode {
+  position: relative
+}
+
+.post-content div[class*=language-].line-numbers-mode>pre {
+  margin: 0 0 0 52px
+}
+
+.post-content div[class*=language-].line-numbers-mode>.line-numbers-wrapper {
+  width: 52px;
+  height: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  color: #73808f;
+  background-color: #2d3845
+}
+
+.post-content div[class*=language-] pre>code {
+  display: block;
+  line-height: 1.6em;
+  font-size: 14px;
+  background-color: #191f26;
+  color: #e6e1cf;
+  overflow-x: auto;
+  padding: 1em
+}
+
+.post-content div[class*=language-] pre>code>.comment,.post-content div[class*=language-] pre>code>.meta,.post-content div[class*=language-] pre>code>.quote {
+  color: #5c6773;
+  font-style: italic
+}
+
+.post-content div[class*=language-] pre>code>.attr,.post-content div[class*=language-] pre>code>.attribute,.post-content div[class*=language-] pre>code>.link,.post-content div[class*=language-] pre>code>.regexp,.post-content div[class*=language-] pre>code>.selector-class,.post-content div[class*=language-] pre>code>.selector-id,.post-content div[class*=language-] pre>code>.template-variable,.post-content div[class*=language-] pre>code>.variable {
+  color: #f73
+}
+
+.post-content div[class*=language-] pre>code>.builtin-name,.post-content div[class*=language-] pre>code>.literal,.post-content div[class*=language-] pre>code>.number,.post-content div[class*=language-] pre>code>.params,.post-content div[class*=language-] pre>code>.type {
+  color: #fe9
+}
+
+.post-content div[class*=language-] pre>code>.bullet,.post-content div[class*=language-] pre>code>.string {
+  color: #b8cc52
+}
+
+.post-content div[class*=language-] pre>code>.built_in,.post-content div[class*=language-] pre>code>.section,.post-content div[class*=language-] pre>code>.title {
+  color: #ffb454
+}
+
+.post-content div[class*=language-] pre>code>.function,.post-content div[class*=language-] pre>code>.keyword,.post-content div[class*=language-] pre>code>.operator,.post-content div[class*=language-] pre>code>.selector-tag,.post-content div[class*=language-] pre>code>.symbol {
+  color: #f73
+}
+
+.post-content div[class*=language-] pre>code>.name {
+  color: #36a3d9
+}
+
+.post-content div[class*=language-] pre>code>.tag {
+  color:#98d7ff
+}
+
+.post-content div[class*=language-] pre>code>.emphasis {
+  font-style: italic
+}
+
+.post-content div[class*=language-] pre>code>strong {
+  font-weight: 700
+}

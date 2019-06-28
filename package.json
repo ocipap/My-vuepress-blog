@@ -1,0 +1,28 @@
+{
+  "name": "vuepress_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/markdown": "^1.0.2",
+    "@vuepress/markdown-loader": "^1.0.2",
+    "@vuepress/plugin-active-header-links": "^1.0.0-rc.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-blog": "^1.2.3",
+    "@vuepress/plugin-pagination": "^1.0.0-alpha.0",
+    "@vuepress/plugin-search": "^1.0.2",
+    "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "surge": "^0.21.3"
+  }
+}
