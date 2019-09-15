@@ -2,7 +2,7 @@
 type: PostLayout
 title: vuepress 이용해 블로그를 만들자
 subtitle: 조금만 해볼려고 했는데 일주일 걸린 블로그 만들기
-category: Vue
+category: vue
 thumbnail: /190627/create_vuepress_blog.png
 meta:
   - name: description
@@ -18,7 +18,7 @@ date: 2019-06-27
 
 ## vuepress ?
 
-`vue` 기반 **정적 사이트 생성기**이다. 이미 `jekyll` ,`hexo`, `gatsby` 등 여러 프레임워크나 라이브러리에서 정적 사이트를 생성하는 여러 방법을 제공하고 있다. `vuepress` 는 기본적으로 테마를 지원해주고 `Google Analytics` , `toc` 등 여러 유용한 플러그인드도 지원하고 있어 기술문서를 작성하기 용이하다.
+`vue` 기반 **정적 사이트 생성기**이다. 이미 `jekyll` ,`hexo`, `gatsby` 등 여러 프레임워크나 라이브러리에서 정적 사이트를 생성하는 여러 방법을 제공하고 있다. `vuepress` 는 기본적으로 테마를 지원해주고 `Google Analytics` , `toc` 등 여러 유용한 플러그인들도 지원하고 있어 기술문서를 작성하기 용이하다.
 
 `vuepress` 를 기본 설정 방식이나 사용방법은 공식 문서나 타 블로그에서 잘 정리되어 있으므로 이번 포스팅에서는 블로그를 만들면서 삽질을 했던 경험에 대해 이야기해보겠다.
 

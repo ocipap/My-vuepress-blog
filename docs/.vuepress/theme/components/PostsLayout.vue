@@ -47,7 +47,7 @@
   .post-list .post-category {
     color: #525252;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .post-list .post-title {
@@ -57,5 +57,6 @@
 
   .post-list .post-subtitle {
     color: #111;
+    font-size: 1.4rem;
   }
 </style>

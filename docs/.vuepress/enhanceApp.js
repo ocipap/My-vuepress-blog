@@ -6,7 +6,4 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-  router.addRoutes([
-    { path: '/', alias: '/b' }
-  ])
 }

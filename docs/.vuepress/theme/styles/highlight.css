@@ -1,190 +1,143 @@
-
-
-div[class*=language-]:before {
-  position: absolute;
-  z-index: 3;
-  top: .8em;
-  right: 1em;
-  font-size: .75rem;
-  color: hsla(0,0%,100%,.4)
+/* Generated with http://k88hudson.github.io/syntax-highlighting-theme-generator/www */
+/* http://k88hudson.github.io/react-markdocs */
+/**
+ * @author k88hudson
+ *
+ * Based on prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/*********************************************************
+* General
+*/
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #000000;
+  font-size: 16px;
+  text-shadow: none;
+  font-family: 'Roboto Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
-
-div[class~=language-js]:before {
-  content: "js"
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::mozselection,
+code[class*="language-"]::mozselection {
+  text-shadow: none;
+  background: #121212;
 }
-
-div[class~=language-ts]:before {
-  content: "ts"
+@media print {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    text-shadow: none;
+  }
 }
-
-div[class~=language-html]:before {
-  content: "html"
-}
-
-div[class~=language-md]:before {
-  content: "md"
-}
-
-div[class~=language-vue]:before {
-  content: "vue"
-}
-
-div[class~=language-css]:before {
-  content: "css"
-}
-
-div[class~=language-sass]:before {
-  content: "sass"
-}
-
-div[class~=language-scss]:before {
-  content: "scss"
-}
-
-div[class~=language-less]:before {
-  content: "less"
-}
-
-div[class~=language-stylus]:before {
-  content: "stylus"
-}
-
-div[class~=language-go]:before {
-  content: "go"
-}
-
-div[class~=language-java]:before {
-  content: "java"
-}
-
-div[class~=language-c]:before {
-  content: "c"
-}
-
-div[class~=language-sh]:before {
-  content: "sh"
-}
-
-div[class~=language-yaml]:before {
-  content: "yaml"
-}
-
-div[class~=language-py]:before {
-  content: "py"
-}
-
-div[class~=language-javascript]:before {
-  content: "js"
-}
-
-div[class~=language-typescript]:before {
-  content: "ts"
-}
-
-div[class~=language-markup]:before {
-  content: "html"
-}
-
-div[class~=language-markdown]:before {
-  content: "md"
-}
-
-div[class~=language-json]:before {
-  content: "json"
-}
-
-div[class~=language-ruby]:before {
-  content: "rb"
-}
-
-div[class~=language-python]:before {
-  content: "py"
-}
-
-div[class~=language-bash]:before {
-  content: "sh"
-}
-
-
-.post-content div[class*=language-] {
-  line-height: 1.6em;
-  font-size: 14px;
-  background-color: #191f26;
-  color: #e6e1cf;
-  font-family: Consolas,Monaco,monospace;
-  border-radius: 16px;
-  overflow: hidden;
-  margin: 10px 0px;
-}
-
-.post-content div[class*=language-].line-numbers-mode {
-  position: relative
-}
-
-.post-content div[class*=language-].line-numbers-mode>pre {
-  margin: 0 0 0 52px
-}
-
-.post-content div[class*=language-].line-numbers-mode>.line-numbers-wrapper {
-  width: 52px;
-  height: 100%;
-  text-align: right;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
+pre[class*="language-"] {
   padding: 1em;
-  color: #73808f;
-  background-color: #2d3845
+  margin: .5em 0;
+  overflow: auto;
+  background: #fafafa;
 }
-
-.post-content div[class*=language-] pre>code {
-  display: block;
-  line-height: 1.6em;
-  font-size: 14px;
-  background-color: #191f26;
-  color: #e6e1cf;
-  overflow-x: auto;
-  padding: 1em
+:not(pre) > code[class*="language-"] {
+  padding: .1em .3em;
+  border-radius: .3em;
+  color: #db4c69;
+  background: #f9f2f4;
 }
-
-.post-content div[class*=language-] pre>code>.comment,.post-content div[class*=language-] pre>code>.meta,.post-content div[class*=language-] pre>code>.quote {
-  color: #5c6773;
-  font-style: italic
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: .7;
 }
-
-.post-content div[class*=language-] pre>code>.attr,.post-content div[class*=language-] pre>code>.attribute,.post-content div[class*=language-] pre>code>.link,.post-content div[class*=language-] pre>code>.regexp,.post-content div[class*=language-] pre>code>.selector-class,.post-content div[class*=language-] pre>code>.selector-id,.post-content div[class*=language-] pre>code>.template-variable,.post-content div[class*=language-] pre>code>.variable {
-  color: #f73
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #93a1a1;
 }
-
-.post-content div[class*=language-] pre>code>.builtin-name,.post-content div[class*=language-] pre>code>.literal,.post-content div[class*=language-] pre>code>.number,.post-content div[class*=language-] pre>code>.params,.post-content div[class*=language-] pre>code>.type {
-  color: #fe9
+.token.punctuation {
+  color: #999999;
 }
-
-.post-content div[class*=language-] pre>code>.bullet,.post-content div[class*=language-] pre>code>.string {
-  color: #b8cc52
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #990055;
 }
-
-.post-content div[class*=language-] pre>code>.built_in,.post-content div[class*=language-] pre>code>.section,.post-content div[class*=language-] pre>code>.title {
-  color: #ffb454
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #11a400;
 }
-
-.post-content div[class*=language-] pre>code>.function,.post-content div[class*=language-] pre>code>.keyword,.post-content div[class*=language-] pre>code>.operator,.post-content div[class*=language-] pre>code>.selector-tag,.post-content div[class*=language-] pre>code>.symbol {
-  color: #f73
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: #ffffff;
 }
-
-.post-content div[class*=language-] pre>code>.name {
-  color: #36a3d9
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #0077aa;
 }
-
-.post-content div[class*=language-] pre>code>.tag {
-  color:#98d7ff
+.token.function {
+  color: #dd4a68;
 }
-
-.post-content div[class*=language-] pre>code>.emphasis {
-  font-style: italic
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ee9900;
 }
-
-.post-content div[class*=language-] pre>code>strong {
-  font-weight: 700
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[data-line] {
+  position: relative;
+}
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #f7ebc6;
+  box-shadow: inset 5px 0 0 ;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
 }

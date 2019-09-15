@@ -29,6 +29,11 @@ ul {
   padding: 0;
 }
 
+
+code, pre {
+  font-family: 'Roboto Mono', monospace;
+}
+
 #app {
   min-height: 100vh;
 }
@@ -95,9 +100,9 @@ ul {
 }
 
 .post-content p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: normal;
-  line-height: 2rem;
+  line-height: 2.2rem;
   word-break: keep-all;
 }
 
@@ -108,6 +113,7 @@ ul {
   font-size: .85em;
   background-color: rgba(27,31,35,.05);
   border-radius: 3px;
+  white-space: nowrap;
 }
 
 .post-content ul, .post-content ol {
