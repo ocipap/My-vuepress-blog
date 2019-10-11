@@ -18,5 +18,8 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>

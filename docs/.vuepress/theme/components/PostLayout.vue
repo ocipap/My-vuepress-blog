@@ -16,7 +16,7 @@
   }
 
   .post-content .post-title {
-    font-size: 3.5rem;
+    font-size: 2.3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
   }

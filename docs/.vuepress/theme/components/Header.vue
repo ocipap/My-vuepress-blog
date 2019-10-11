@@ -1,10 +1,10 @@
 <template>
   <header id="header">
-    <h1 class="header-name">
+    <h2 class="header-name">
       <router-link to="/">
         {{ $themeConfig.headerTitle || $siteTitle }}
       </router-link>
-    </h1>
+    </h2>
     <div class="header-right">
       <ul class="nav" v-if="$themeConfig.nav">
         <li class="nav-item" v-for="item in $themeConfig.nav">
@@ -12,7 +12,7 @@
         </li>
       </ul>
       <div class="search-wrapper">
-        <SearchBox/>
+        <SearchBox />
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@
 <style scoped>
   #header {
     display: flex;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   #header .header-name a {

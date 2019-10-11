@@ -26,14 +26,16 @@
 
 <style>
   .posts-content {
-    max-width: 1080px;
-    width: 100%;
-    margin: auto;
+    padding: 0 30px;
   }
 
   .post-list {
     list-style: none;
-    padding: 30px 10px;
+    padding: 30px 0;
+  }
+
+  .post-list + .post-list {
+    border-top: solid 1px #ddd;
   }
 
   .post-list a {
@@ -45,18 +47,19 @@
   }
 
   .post-list .post-category {
-    color: #525252;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 15.75px;
+    color: #262626;
   }
 
   .post-list .post-title {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #212121;
   }
 
   .post-list .post-subtitle {
-    color: #111;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
+    color: #424242;
   }
 </style>
