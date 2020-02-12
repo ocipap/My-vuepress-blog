@@ -69,5 +69,4 @@ html`${_.map(data =>
 // <li>이름 : A이메일 : aaaa@mail.com</li>,<li>이름 : B이메일 : bbbb@mail.com</li>,<li>이름 : C이메일 : cccc@mail.com</li>,<li>이름 : Dundefined</li>
 ```
 
-
  
